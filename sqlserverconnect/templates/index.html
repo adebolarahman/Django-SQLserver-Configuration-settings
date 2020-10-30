@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+   <title>Connect SQLServer From Django</title>
+</head>
+<body><center>
+    <h1> How To Connect SQL Server Database & Display Data</h1>
+    <h2> Django Web Tutorials</h2>
+    <hr/>
+    <table border ="1">
+        <tr>
+            <th>Employee Id</th>
+            <th>Emp Name</th>
+            <td>Email</td>
+            <td>Salary</td>
+        </tr>
+        {% for datadisplay in sqlserverconn%}
+        <tr>
+            <td>{{datadisplay.Empid}}</td>
+            <td>{{datadisplay.Empname}}</td>
+            <td>{{datadisplay.Email}}</td>
+            <td>{{datadisplay.Salary}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</center></body>
+</html>
