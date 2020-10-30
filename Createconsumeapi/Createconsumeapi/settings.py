@@ -83,8 +83,8 @@ DATABASES = {
         'ENGINE': 'sql_server.pyodbc',
         'NAME': 'CHANNELS ANALYTICS',
         'HOST': 'ABP-DR-INTEDW\DATA_ANALYTICS',
-        'USER': 'sa',
-        'PASSWORD': 'Analytics10$',
+        'USER': 'user',
+        'PASSWORD': 'password',
 
         'OPTIONS': {
             'driver': 'SQL Server Native Client 11.0',
